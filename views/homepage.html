@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Welcome to PNG Online jewellery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/homepage.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_byb6Sm8WjqZZpSMEK9quLcs6x7X3GfhfWw&s" type="image/x-icon">
+</head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+}
+body, html{
+    font-family: Helvetica Neue,sans-serif;
+}
+
+.home-upper-header{
+    background-color:rgb(109, 0, 109);
+    display: flex;
+    justify-content: start;
+color: aliceblue;
+padding-left: 25px;
+gap: 10px;
+}
+.bi-whatsapp, .bi-geo-alt, .bi-shop-window {
+padding-left: 4px;
+padding-right: 2px;
+}
+a, .png-whatsapp, .png-franchise, .png-store-locator, .header-metal-rates{
+    color: rgba(240, 248, 255, 0.866);
+    text-decoration: none;
+    font-size: 13px;
+    padding: 5px 18px 5px 0px;
+    /* font-weight: bold; */
+}
+a:hover{
+color: white;
+text-decoration: none;
+}
+.header-since-head{
+    padding: 2px 19rem;
+}
+.since-header{
+    color: rgb(255, 225, 0);
+    font-weight: bold;
+    font-size: 13px;
+}
+.header-metal-rates{
+    padding-left: 10rem;
+}
+svg:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+}
+.nav-text-area{
+    text-decoration:dimgray;
+    padding: 5px 15px;
+    width: 45rem;
+    border-radius: 22px;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    outline-color: rgb(196, 132, 196);
+outline-offset: 0cap;
+border: 1px solid rgb(139, 138, 138);
+font-size: 14px;
+color: black;
+margin-top: 10px;
+}
+.search-btn{
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 90%;
+  margin: 2px;
+  padding: 7px;
+  height: 45px;
+  width: 45px; 
+}
+.bi-search{
+    background-color: transparent;
+    color: gray;
+}
+.bi-search:hover{
+    color: gray;
+}
+.nav-text-area ::placeholder{
+font-style: italic;
+
+}
+.navbar-items{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    padding: 20px 0px 0px 0px;
+}
+.items{
+    color: rgb(88, 88, 88);
+    font-size: 15px;
+}
+.items:hover{
+    color: purple;
+    
+}
+.bi-cart-dash,.bi-bag-fill,.bi-person-circle{
+    padding-right: 10px;
+    color: rgb(148, 106, 158);
+    color: rgb(148, 106, 158);
+}
+.bi-cart-dash:hover{
+    color: rgb(148, 106, 158);
+}
+.bi-bag-fill:hover{
+    color: rgb(148, 106, 158);
+}
+.bi-person-circle:hover{
+    color: rgb(148, 106, 158);
+}
+.navbar-icon-text{
+    color: rgb(88, 88, 88);
+    font-size: 15px;
+}
+.navbar-icon-text:hover{
+    color: darkmagenta;
+}
+
+
+/* .slider-container:hover .slider-content {
+    animation-play-state: paused; 
+} */
+
+.slider {
+    position: relative;
+    max-width: auto; /* Match the image width */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 0px;
+}
+.slider-img{
+    height: 650px;
+    object-fit: fill;
+    width: 100%;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* width: calc(100% * 6); Adjust based on number of slides */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.golden-img{
+    width: 100%;
+    padding: 10px 0px;
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section {
+    display: inline-block;
+    margin: 0 0px;
+}
+
+.section p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section hr {
+    border-top: 1px solid #ccc;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #888;
+    margin-top: 10px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 75px;
+    justify-content:   
+ center;
+}
+
+.product {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+.product h3{
+    padding-top: 15px;
+}
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.small-footer {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #D5A6E0;
+}
+
+.promises-container {
+    background-color: #4B225E; /* Matches the background in the image */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.promises-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.promises-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #D5A6E0;
+}
+
+.promises-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.promise-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eed441; /* Gold color for icons and text */
+}
+
+.promise-icon {
+    font-size: 50px; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+.promise-text {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.png-title{
+    text-align: center;
+    color: black;
+    padding-top: 35px;
+}
+.png-subtitle{
+    text-align: center;
+    color: lightgrey;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    max-width: 45%;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #4B225E;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+    max-width: 45%;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.overlay-text .play-icon {
+    margin-right: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.store-info {
+    display: flex;
+    align-items: center;
+}
+
+.store-info img {
+    width: 500px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.store-details {
+    text-align: left;
+}
+
+.store-details h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.store-details p {
+    margin-bottom: 20px;
+}
+
+.find-store {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.find-store:hover {
+    background-color:azure;
+    color: black;
+}
+
+.subscribe-form {
+    text-align: center;
+    padding: 50px 0;
+    background-image: linear-gradient(to right, rgba(211, 108, 190, 0.626) , rgba(103, 25, 119, 0.593));}
+
+.latest-png-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p.latest-png-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 320px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius:5px;
+    cursor: pointer; 
+    margin-left: -7px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 45px;
+    background-color: white;
+    color: black; /* White text color */
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li{
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: black;
+    text-decoration: none;
+
+}
+.accept-help{
+    text-align: start;
+    font-size: 18px;
+    font-weight:100;
+}
+.payment-methods{
+    align-items: center;
+}
+
+
+.payment-methods ul, .social-media ul {
+    display: flex;
+}
+
+.payment-methods ul li, .social-media ul li {
+    margin: 0 10px;
+}
+
+.payment-methods svg, .social-media svg {
+    width: 24px;
+    height: 16px;
+    fill: #fff;
+}
+.we-accept-img{
+    height: 55px;
+    width: 85px;
+}
+.logo-copyright{
+    text-align: center;
+    
+}
+
+.bottom-main-logo{
+    height: 35px;
+    width: 25px;
+    padding-left: 24px;
+}
+
+.devp-name{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+.devp-name:hover{
+    color: #4B225E;
+}
+</style>
+  <body>
+      <div class="home-upper-header">
+        <div class="png-whatsapp">
+            <a class="png-whatsapp-text" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+              </svg>Whatsapp</a>
+        </div>
+        <div class="png-store-locator">
+            <a class="png-store-locator-text" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>Store Locator</a>
+        </div>
+        <div class="png-franchise">
+            <a class="png-franchise-text" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
+                <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5m2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5"/>
+              </svg>Franchise</a>
+        </div>
+        <div class="header-since-head"><span class="since-header">LEGACY SINCE 1932</span></div>
+
+        <div class="header-metal-rates">
+            <a class="png-franchise-text" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+          </svg>Today Rates</a>
+        </div>
+      </div>
+
+<div class="navbar">
+    <div class="navbar-logo"><a class="main-logo" href="#"><img src="https://d1put4x3vjlh9s.cloudfront.net/public/uploads/website/png_logo_1727074242.svg"></a></div>
+    <div class="nav-main-content">
+        <input class="nav-text-area" type="text" placeholder="What are you Looking for...">
+        <button class="search-btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg></button>
+        <div class="navbar-items">
+        <div><a class="items" href="">All Jewellery</a></div>
+        <div><a class="items" href="">Diamon</a></div>
+        <div><a class="items" href="">Gold</a></div>
+        <div><a class="items" href="">Silver</a></div>
+        <div><a class="items" href="">Billions</a></div>
+        <div><a class="items" href="">Collections</a></div>
+        <div><a class="items" href="">Investers</a></div></div>
+    </div>
+    <div class="navbar-use">
+        <a class="navbar-icon-text" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+          </svg>Account</a>
+        <a class="navbar-icon-text" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
+          </svg>Wishlist</a>
+        <a class="navbar-icon-text" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+            <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+          </svg>My Cart</a>
+    </div>
+</div>
+
+<div class="main-body-container"></div>
+
+<div class="slider">
+  <div class="slides" id="slides">
+      <!-- Duplicated last slide for seamless loop -->
+      <div class="slide"><img class="slider-img" src="https://t4.ftcdn.net/jpg/08/96/90/57/360_F_896905743_bP5X9FRi8CQNwhQmoIpTIJWkl6yGwqP4.jpg" alt="Image 4"></div>
+      <!-- Original slides -->
+      <div class="slide"><img class="slider-img" src="https://t4.ftcdn.net/jpg/08/96/90/57/360_F_896905743_bP5X9FRi8CQNwhQmoIpTIJWkl6yGwqP4.jpg" alt="Image 1"></div>
+      <div class="slide"><img class="slider-img" src="https://t4.ftcdn.net/jpg/08/96/90/57/360_F_896905743_bP5X9FRi8CQNwhQmoIpTIJWkl6yGwqP4.jpg" alt="Image 2"></div>
+      <div class="slide"><img class="slider-img" src="https://t4.ftcdn.net/jpg/08/96/90/57/360_F_896905743_bP5X9FRi8CQNwhQmoIpTIJWkl6yGwqP4.jpg" alt="Image 3"></div>
+      <div class="slide"><img class="slider-img" src="https://t4.ftcdn.net/jpg/08/96/90/57/360_F_896905743_bP5X9FRi8CQNwhQmoIpTIJWkl6yGwqP4.jpg" alt="Image 4"></div>
+      <!-- Duplicated first slide for seamless loop -->
+      <div class="slide"><img class="slider-img" src="https://t4.ftcdn.net/jpg/08/96/90/57/360_F_896905743_bP5X9FRi8CQNwhQmoIpTIJWkl6yGwqP4.jpg" alt="Image 1"></div>
+  </div>
+  <!-- Navigation buttons -->
+  <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+  <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<img class="golden-img" src="/images/golden img .png1.png">
+
+<header>
+  <div class="section">
+      <p>New Ins | Best Seller</p>
+      <hr>
+  </div>
+  <p class="tagline">Freshen up your look!</p>
+</header>
+<main>
+  <section class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAVvz1XZvsDlNkn5sAaF6FpozNGLT2ipJUcQ2r9YG0irI1UzXW_Gv8iAQeJs1BQ6wLPs&usqp=CAU" alt="Maharashtrian Himali Gold Nath">
+    <h3>Maharashtrian Himali Gold Nath</h3>
+    <p>₹24,677</p>
+</section><section class="product">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAVvz1XZvsDlNkn5sAaF6FpozNGLT2ipJUcQ2r9YG0irI1UzXW_Gv8iAQeJs1BQ6wLPs&usqp=CAU" alt="Maharashtrian Himali Gold Nath">
+  <h3>Maharashtrian Himali Gold Nath</h3>
+  <p>₹24,677</p>
+</section><section class="product">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAVvz1XZvsDlNkn5sAaF6FpozNGLT2ipJUcQ2r9YG0irI1UzXW_Gv8iAQeJs1BQ6wLPs&usqp=CAU" alt="Maharashtrian Himali Gold Nath">
+  <h3>Maharashtrian Himali Gold Nath</h3>
+  <p>₹24,677</p>
+</section>
+
+  <section class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAVvz1XZvsDlNkn5sAaF6FpozNGLT2ipJUcQ2r9YG0irI1UzXW_Gv8iAQeJs1BQ6wLPs&usqp=CAU" alt="Gold Luminary Fancy Gold Chain">
+      <h3>Gold Luminary Fancy Gold Chain</h3>
+      <p>₹66,910</p>
+  </section>
+  </main>
+  <img class="golden-img" src="/images/golden img .png1.png">
+
+  <div class="promises-container">
+    <h2 class="promises-title">PNG Promises</h2>
+    <p class="promises-subtitle">Incredible rationales to shop with us!</p>
+    <div class="promises-grid">
+        <div class="promise-item">
+            <i class="fas fa-infinity promise-icon"></i>
+            <div class="promise-text">LIFETIME BUYBACK</div>
+        </div>
+        <div class="promise-item">
+            <i class="fas fa-shipping-fast promise-icon"></i>
+            <div class="promise-text">INSURED FREE SHIPPING</div>
+        </div>
+        <div class="promise-item">
+            <i class="fas fa-certificate promise-icon"></i>
+            <div class="promise-text">PURITY GUARANTEE</div>
+        </div>
+        <div class="promise-item">
+            <i class="fas fa-sync-alt promise-icon"></i>
+            <div class="promise-text">LIFETIME EXCHANGE</div>
+        </div>
+        <div class="promise-item">
+            <i class="fas fa-exchange-alt promise-icon"></i>
+            <div class="promise-text">GOLD EXCHANGE</div>
+        </div>
+        <div class="promise-item">
+            <i class="fas fa-undo promise-icon"></i>
+            <div class="promise-text">14-DAY RETURNS</div>
+        </div>
+    </div>
+</div>
+<h1 class="png-title">PNG Jewellers</h1>
+      <p class="png-subtitle">A paradise of precious jewels</p>
+      
+<img class="golden-img" src="/images/golden img .png1.png">
+
+<div class="container">
+  <div class="text-content">
+      <h2>Beginnings - Cornerstone of each story!</h2>
+      <p>
+          The story of PNG is indeed an epic scripted by six generations at the forefront of exceptional traditional
+          designs and unparalleled craftsmanship. Discover how PNG Jewellers Pvt. Ltd, founded in 1832, went from a
+          little jewellery shop in Sangli to a renowned design brand in the jewellery industry.
+      </p>
+      <a href="#" class="read-more-btn">READ MORE</a>
+  </div>
+  <div class="image-container">
+      <img src="https://t4.ftcdn.net/jpg/08/96/90/57/360_F_896905743_bP5X9FRi8CQNwhQmoIpTIJWkl6yGwqP4.jpg" alt="Our beloved Dajikaka">
+      <div class="overlay-text">
+          <i class="fas fa-play play-icon"></i> In the fond remembrance of our pillar of strength<br>
+          <strong>Our beloved Dajikaka</strong>
+      </div>
+  </div>
+</div>
+
+<img class="golden-img" src="/images/golden img .png1.png">
+<h1 class="png-title">PNG Jewellers</h1>
+      <p class="png-subtitle">Find a jewellery store near you.</p>
+<main>
+  <section class="store-info">
+      <img src="https://content.jdmagicbox.com/comp/goa/p1/0832px832.x832.150110161432.x8p1/catalogue/p-n-gadgil-jewellers-panjim-goa-diamond-jewellery-showrooms-9xdj27bcua.jpg" alt="PNG Jewellers Store Front">
+      <div class="store-details">
+          <h2>P. N. Gadgil Jewellers</h2>
+          <p>Come and Say Hi</p>
+          <p>Explore iconic traditional jewellery, gold and diamond engagement rings, silver classics, elegant accessories, and precious gifts for any occasion at our   
+PNG Jewellers stores across the globe.</p>
+          <a href="#" class="find-store">FIND A STORE LOCATION</a>
+      </div>
+  </section>
+</main>
+<img class="golden-img" src="/images/golden img .png1.png">
+<header class="subscribe-form">
+<h2 class="latest-png-title">Latest from PNG Jewellers</h2>
+        <p class="latest-png-subtitle">Be the first to know about exciting new designs, special events, store openings, and much more.</p>
+<form>
+  <input type="email" placeholder="Your Email Address">
+  <button type="submit">SIGN UP</button>
+</form>
+</header>
+<img class="golden-img" src="/images/golden img .png1.png">
+<footer>
+  <div class="footer-section">
+      <h3>Know Us</h3>
+      <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Careers</a></li>
+      </ul>
+  </div>
+
+  <div class="footer-section">
+      <h3>PNG Promises</h3>
+      <ul>
+          <li><a href="#">14-Day Returns</a></li>
+          <li><a href="#">Free Shipping</a></li>
+          <li><a href="#">Certifications</a></li>
+          <li><a href="#">Lifetime Buyback</a></li>
+          <li><a href="#">Lifetime Exchange</a></li>
+          <li><a href="#">FPP/DPP</a></li>
+          <li><a href="#">Gold Exchange</a></li>
+      </ul>
+  </div>
+
+  <div class="footer-section">
+      <h3>Customer Delight</h3>
+      <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Book Appointment</a></li>
+          <li><a href="#">Contest & Programs</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">PNG Franchise</a></li>
+      </ul>
+  </div>
+
+  <div class="footer-section">
+      <h3>Education</h3>
+      <ul>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Jewellery Care Guide</a></li>
+          <li><a href="#">Know Your Diamond</a></li>
+          <li><a href="#">Know Your Gemstone</a></li>
+      </ul>
+  </div>
+
+  <div class="footer-section">
+      <h3>Get in Touch</h3>
+      <ul>
+          <li><a href="mailto:customerservice@pngadgil.com">customerservice@pngadgil.com</a></li>
+          <li><a href="tel:+918806907567">+91 88069 07567</a></li>
+          <li>(10 am - 6 pm)</li>
+      </ul>
+  </div>
+</footer>
+<img class="golden-img" src="/images/golden img .png1.png">
+
+<footer>
+  <div class="payment-methods">
+      <!-- <p class="accept-help">We Accept</p> -->
+      <ul>
+        <img class="we-accept-img" src="https://thumbs.dreamstime.com/b/visa-logo-printed-paper-chisinau-moldova-september-visa-logo-printed-paper-placed-white-background-visa-128373485.jpg"></li>
+        <img class="we-accept-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4H5wB7Osnm_7IDfCwUXaiSKLpZe8AEV8iuA&s">
+        <img class="we-accept-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0HYbbqcg5nDdfX7j_LprBBJJgKWF5UtqFRw&s">
+        <img class="we-accept-img" src="data:image/png;base64,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">
+        <img class="we-accept-img" src="https://m.economictimes.com/thumb/msid-74960608,width-1200,height-900,resizemode-4,imgsize-49172/upi-twitter.jpg">
+      </ul>
+  </div>
+</footer>
+<img class="golden-img" src="/images/golden img .png1.png">
+
+  <div class="logo-copyright">
+      <p>&copy; 2024 PNG Jewellers. All rights reserved.</p>
+      <p>Developed and Hosted by <a class="devp-name" href="https://github.com/pshree2003" >Shrikant Palakurtiwar</a></p>
+  </div>
+
+  <script>
+  let currentIndex = 1; // Start at the first real slide
+
+    function showSlide(index) {
+        const slides = document.getElementById('slides');
+        const slideCount = document.querySelectorAll('.slide').length;
+        const slideWidth = document.querySelector('.slide').offsetWidth;
+    
+        if (index >= slideCount - 1) {
+            currentIndex = 1; // Reset to the first real slide
+            slides.style.transition = 'none';
+            slides.style.transform = `translateX(-${slideWidth}px)`;
+            setTimeout(() => {
+                slides.style.transition = 'transform 0.5s ease-in-out';
+            }, 50);
+        } else if (index <= 0) {
+            currentIndex = slideCount - 2; // Reset to the last real slide
+            slides.style.transition = 'none';
+            slides.style.transform = `translateX(-${(slideCount - 2) * slideWidth}px)`;
+            setTimeout(() => {
+                slides.style.transition = 'transform 0.5s ease-in-out';
+            }, 50);
+        } else {
+            currentIndex = index;
+            slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+    }
+    
+    function changeSlide(direction) {
+        showSlide(currentIndex + direction);
+    }
+    
+    // Automatic slideshow (optional)
+    setInterval(() => {
+        changeSlide(1);
+    }, 5000); // Change every 3 seconds
+    
+    // Initial display adjustment
+    document.addEventListener('DOMContentLoaded', () => {
+        const slideWidth = document.querySelector('.slide').offsetWidth;
+        document.getElementById('slides').style.transform = `translateX(-${slideWidth}px)`;
+    });
+    
+    
+    
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
